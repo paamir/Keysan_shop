@@ -14,6 +14,7 @@ namespace Domain.ProductCategoryAgg
     {
         EditProductCategoryModel GetDetailBy(long id);
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel productCategorySearch);
+        List<ProductCategoryViewModel> GetProductCategories();
     }
 
 }

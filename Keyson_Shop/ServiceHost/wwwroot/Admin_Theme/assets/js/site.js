@@ -10,10 +10,13 @@ SinglePage.LoadModal = function () {
         null,
         function (htmlPage) {
             $("#ModalContent").html(htmlPage);
+            //if this code not the vlidation dosn't work on client side work on server side 
+            //این چند خط برای ولیدیشن هستند و اگر نباشیند ولی دیشن سمت کابر اجرا نخواهد شد
             const container = document.getElementById("ModalContent");
             const forms = container.getElementsByTagName("form");
             const newForm = forms[forms.length - 1];
             $.validator.unobtrusive.parse(newForm);
+            //
             showModal();
         }).fail(function (error) {
             alert("خطایی رخ داده، لطفا با مدیر سیستم تماس بگیرید.");

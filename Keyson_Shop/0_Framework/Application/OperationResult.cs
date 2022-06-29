@@ -15,7 +15,7 @@ namespace _0_Framework
         {
             IsSuccedded = false;
         }
-        public OperationResult Succdded(string message = "عملیات با موفقیت ثبت شد")
+        public OperationResult Succdded(string message = "عملیات با موفقیت انجام شد")
         {
             Message = message;
             IsSuccedded = true;
@@ -24,7 +24,7 @@ namespace _0_Framework
         public OperationResult Failed(string message)
         {
             Message = message;
-            IsSuccedded = true;
+            IsSuccedded = false;
             return this;
         }
     }
