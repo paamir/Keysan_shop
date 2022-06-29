@@ -91,5 +91,10 @@ namespace ShopManagement.Application
         {
             return _productCategoryRepository.GetDetailBy(id);
         }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+           return _productCategoryRepository.GetProductCategories();
+        }
     }
 }
