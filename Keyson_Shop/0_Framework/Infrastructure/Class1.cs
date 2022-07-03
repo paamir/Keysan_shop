@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace _0_Framework.Infrastructure
 {
@@ -17,7 +18,6 @@ namespace _0_Framework.Infrastructure
         {
             _context = context;
         }
-
         public void Create(T entity)
         {
             _context.Add(entity);

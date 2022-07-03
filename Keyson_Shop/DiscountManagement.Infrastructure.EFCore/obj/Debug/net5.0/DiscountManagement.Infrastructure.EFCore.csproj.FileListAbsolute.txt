@@ -1,0 +1,5 @@
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.AssemblyInfo.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache

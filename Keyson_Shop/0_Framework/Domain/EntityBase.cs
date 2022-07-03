@@ -1,7 +1,6 @@
 ﻿using System;
-using Microsoft.VisualBasic;
 
-namespace _0_Framework
+namespace _0_Framework.Domain
 {
     public class EntityBase
     {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _0_Framework;
+using _0_Framework.Domain;
 using Domain.ProductCategoryAgg;
 using Domain.ProductPictureAgg;
 
@@ -26,7 +27,6 @@ namespace Domain.ProductAgg
         public long CategoryId { get; private set; }
         public ProductCategory Category { get; private set; }
         public List<ProductPicture> ProductPictures { get; private set; }
-
         public Product()
         {
             Category = new ProductCategory();

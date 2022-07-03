@@ -1,4 +1,4 @@
-﻿namespace Domain.ProductPictureAgg
+﻿namespace ShopManagement.Application.Contracts.ProductPicture
 {
     public class ProductPictureSearchModel
     {
