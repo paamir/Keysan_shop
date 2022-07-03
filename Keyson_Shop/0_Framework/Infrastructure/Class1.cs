@@ -23,10 +23,6 @@ namespace _0_Framework.Infrastructure
             _context.Add(entity);
         }
 
-        public List<T> GetAll()
-        {
-            return _context.Set<T>().ToList();
-        }
 
         public T GetBy(TKey id)
         {

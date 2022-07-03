@@ -21,3 +21,5 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\obj\Debug\net5.0\ShopManagement.Infrastructure.Configuration.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.Configuration.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\obj\Debug\net5.0\ShopManagement.Infrastructure.Configuration.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\01_Keyson_Shop_Query.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\01_Keyson_Shop_Query.pdb

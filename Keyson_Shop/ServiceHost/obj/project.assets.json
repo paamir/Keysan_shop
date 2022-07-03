@@ -1999,6 +1999,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "01_Keyson_Shop_Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_Keyson_Shop_Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_Keyson_Shop_Query.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2057,6 +2070,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "01_Keyson_Shop_Query": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",
@@ -7188,6 +7202,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "01_Keyson_Shop_Query/1.0.0": {
+      "type": "project",
+      "path": "../01_Keyson_Shop_Query/01_Keyson_Shop_Query.csproj",
+      "msbuildProject": "../01_Keyson_Shop_Query/01_Keyson_Shop_Query.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
@@ -7221,6 +7240,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "01_Keyson_Shop_Query >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "ShopManagement.Infrastructure.Configuration >= 1.0.0"
@@ -7258,6 +7278,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\01_Keyson_Shop_Query\\01_Keyson_Shop_Query.csproj": {
+              "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\01_Keyson_Shop_Query\\01_Keyson_Shop_Query.csproj"
+            },
             "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\ShopManagement.Infrastructure.Configuration\\ShopManagement.Infrastructure.Configuration.csproj": {
               "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\ShopManagement.Infrastructure.Configuration\\ShopManagement.Infrastructure.Configuration.csproj"
             }

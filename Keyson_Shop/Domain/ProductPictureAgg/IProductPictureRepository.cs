@@ -13,7 +13,7 @@ namespace Domain.ProductPictureAgg
 {
     public interface IProductPictureRepository : IRepository<long, ProductPicture>
     {
-        ProductPictureEditModel GetDetailBy(int id);
+        ProductPictureEditModel GetDetailBy(long id);
         List<ProductPictureViewModel> Search(ProductPictureSearchModel command);
 
     }

@@ -15,7 +15,7 @@ namespace Domain.ProductPictureAgg
         public string PictureAlt { get;private set; }
         public string PictureTitle { get;private set; }
         public bool IsDeleted { get;private set; }
-        public Product Product { get; set; }
+        public Product Product { get;private set; }
 
         public ProductPicture()
         {

@@ -47,7 +47,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
             return new JsonResult(result);
         }
 
-        public IActionResult OnGetEdit(int id)
+        public IActionResult OnGetEdit(long id)
         {
             var product = _productPictureApplication.GetDetailBy(id);
             product.Products = _productApplication.GetProducts();

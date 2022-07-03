@@ -10,7 +10,6 @@ namespace _0_Framework.Domain
     public interface IRepository<TKey, T>
     {
         void Create(T entity);
-        List<T> GetAll();
         T GetBy(TKey id);
         void SaveChanges();
         bool Exists(Expression<Func<T, bool>> expression);

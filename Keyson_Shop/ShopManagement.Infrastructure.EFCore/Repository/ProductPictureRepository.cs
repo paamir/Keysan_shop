@@ -19,7 +19,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
-        public ProductPictureEditModel GetDetailBy(int id)
+        public ProductPictureEditModel GetDetailBy(long id)
         {
             return _context.ProductsPicture.Select(x => new ProductPictureEditModel()
             {
@@ -50,7 +50,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 products = products.Where(x => x.ProductId == command.ProductId);
             }
 
-            
 
             return products.OrderByDescending(x => x.Id).ToList();
         }

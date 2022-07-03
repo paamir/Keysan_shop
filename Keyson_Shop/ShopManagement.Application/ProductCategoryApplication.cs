@@ -69,17 +69,6 @@ namespace ShopManagement.Application
             return operationresult.Succdded();
         }
 
-        public List<ProductCategoryViewModel> GetAll()
-        {
-            return _productCategoryRepository.GetAll().Select(x => new ProductCategoryViewModel()
-            {
-                Name = x.Name,
-                Description = x.Description,
-                Id = x.Id,
-                Picture = x.Picture,
-                CreationDate = x.CreationDate.ToShortDateString()
-            }).ToList();
-        }
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
         {

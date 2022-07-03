@@ -83,7 +83,7 @@ namespace ShopManagement.Application
            return _productPictureRepository.Search(command);
         }
 
-        public ProductPictureEditModel GetDetailBy(int id)
+        public ProductPictureEditModel GetDetailBy(long id)
         {
             return _productPictureRepository.GetDetailBy(id);
         }

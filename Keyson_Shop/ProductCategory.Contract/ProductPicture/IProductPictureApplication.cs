@@ -11,6 +11,6 @@ namespace ShopManagement.Application.Contracts.ProductPicture
         OperationResult Delete(long id);
         OperationResult Restore(long id);
         List<ProductPictureViewModel> Search(ProductPictureSearchModel command);
-        ProductPictureEditModel GetDetailBy(int id);
+        ProductPictureEditModel GetDetailBy(long id);
     }
 }
