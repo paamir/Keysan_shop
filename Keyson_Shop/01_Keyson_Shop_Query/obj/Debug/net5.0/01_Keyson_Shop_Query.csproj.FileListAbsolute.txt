@@ -11,11 +11,11 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\obj\Debug\net5.0\ref\01_Keyson_Shop_Query.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\obj\Debug\net5.0\01_Keyson_Shop_Query.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\0_Framework.dll
-C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\Domain.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\0_Framework.pdb
-C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\Domain.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\obj\Debug\net5.0\01_Keyson_Shop_Query.csproj.CopyComplete
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\ShopManagement.Domain.pdb

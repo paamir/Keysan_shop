@@ -20,7 +20,7 @@ namespace DiscountManagement.Application
             return _customerDiscountRepository.Search(command);
         }
 
-        public CustomerDiscountEditModel GetDetail(long id)
+        public CustomerDiscountEditModel GetDetailBy(long id)
         {
             return _customerDiscountRepository.GetDetail(id);
         }
@@ -29,18 +29,14 @@ namespace DiscountManagement.Application
         {
             var operationResult = new OperationResult();
             var Discount = _customerDiscountRepository.GetBy(command.Id);
-
+            var startDate = command.StartDateS.ToGeorgianDateTime();
+            var endDate = command.EndDateS.ToGeorgianDateTime();
             if (Discount == null)
             {
                 return operationResult.Failed(OperationMessages.RecordNotFound);
             }
 
-            if (_customerDiscountRepository.Exists(x => x.ProductId == command.ProductId))
-            {
-                return operationResult.Failed(OperationMessages.Duplicate);
-            }
-
-            Discount.Edit(command.ProductId, command.StartDate, command.EndDate, command.Discount, command.Reason);
+            Discount.Edit(command.ProductId, startDate, endDate, command.Discount, command.Reason);
             _customerDiscountRepository.SaveChanges();
             return operationResult.Succdded();
         }
@@ -48,14 +44,17 @@ namespace DiscountManagement.Application
         public OperationResult Create(CustomerDiscountCreateModel command)
         {
             var operationResult = new OperationResult();
-
-            if (_customerDiscountRepository.Exists(x => x.ProductId == command.ProductId))
+            var startDate = command.StartDateS.ToGeorgianDateTime();
+            var endDate = command.EndDateS.ToGeorgianDateTime();
+            if (_customerDiscountRepository.Exists(x =>
+                    x.ProductId == command.ProductId && x.Discount == command.Discount &&
+                    x.StartDate == startDate))
             {
                 return operationResult.Failed(OperationMessages.Duplicate);
             }
 
-            _customerDiscountRepository.Create(new CustomerDiscount(command.ProductId, command.StartDate,
-                command.EndDate, command.Discount, command.Reason));
+            _customerDiscountRepository.Create(new CustomerDiscount(command.ProductId, startDate,
+                endDate, command.Discount, command.Reason));
             _customerDiscountRepository.SaveChanges();
             return operationResult.Succdded();
         }

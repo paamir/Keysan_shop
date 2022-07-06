@@ -34,6 +34,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "01_Keyson_Shop_Query": "1.0.0",
+          "DiscountManagement.Infrastructure.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "ShopManagement.Infrastructure.Configuration": "1.0.0",
@@ -1830,22 +1831,75 @@
           "0_Framework.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "DiscountManagement.Application/1.0.0": {
         "dependencies": {
-          "0_Framework": "1.0.0",
-          "ShopManagement.Application.Contracts": "1.0.0"
+          "DiscountManagement.Application.Contract": "1.0.0",
+          "DiscountManagement.Domain": "1.0.0"
         },
         "runtime": {
-          "Domain.dll": {}
+          "DiscountManagement.Application.dll": {}
         },
         "compile": {
-          "Domain.dll": {}
+          "DiscountManagement.Application.dll": {}
+        }
+      },
+      "DiscountManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Application.Contract.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Domain.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastructure.Configuration/1.0.0": {
+        "dependencies": {
+          "DiscountManagement.Application": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0",
+          "DiscountManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Infrastructure.Configuration.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "DiscountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagement.Infrastructure.EFCore.dll": {}
+        },
+        "compile": {
+          "DiscountManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ShopManagement.Application/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0",
-          "ShopManagement.Application.Contracts": "1.0.0"
+          "ShopManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
         },
         "runtime": {
           "ShopManagement.Application.dll": {}
@@ -1865,6 +1919,18 @@
           "ShopManagement.Application.Contracts.dll": {}
         }
       },
+      "ShopManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagement.Domain.dll": {}
+        },
+        "compile": {
+          "ShopManagement.Domain.dll": {}
+        }
+      },
       "ShopManagement.Infrastructure.Configuration/1.0.0": {
         "dependencies": {
           "01_Keyson_Shop_Query": "1.0.0",
@@ -1882,9 +1948,9 @@
       },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagement.Domain": "1.0.0"
         },
         "runtime": {
           "ShopManagement.Infrastructure.EFCore.dll": {}
@@ -4458,7 +4524,27 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Domain/1.0.0": {
+    "DiscountManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -4469,6 +4555,11 @@
       "sha512": ""
     },
     "ShopManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagement.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

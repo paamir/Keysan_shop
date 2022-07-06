@@ -13,3 +13,7 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\obj\Debug\net5.0\ref\DiscountManagement.Application.Contract.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Domain.pdb

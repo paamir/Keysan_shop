@@ -173,6 +173,33 @@
         "runtime": {
           "bin/placeholder/0_Framework.dll": {}
         }
+      },
+      "ShopManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
+        }
+      },
+      "ShopManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
       }
     }
   },
@@ -537,11 +564,22 @@
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
+    },
+    "ShopManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../ProductCategory.Contract/ShopManagement.Application.Contracts.csproj",
+      "msbuildProject": "../ProductCategory.Contract/ShopManagement.Application.Contracts.csproj"
+    },
+    "ShopManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/ShopManagement.Domain.csproj",
+      "msbuildProject": "../Domain/ShopManagement.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "0_Framework >= 1.0.0"
+      "0_Framework >= 1.0.0",
+      "ShopManagement.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -578,6 +616,9 @@
           "projectReferences": {
             "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\0_Framework\\0_Framework.csproj": {
               "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\0_Framework\\0_Framework.csproj"
+            },
+            "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\ShopManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\ShopManagement.Domain.csproj"
             }
           }
         }

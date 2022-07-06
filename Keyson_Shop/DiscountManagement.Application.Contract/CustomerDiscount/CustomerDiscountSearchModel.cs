@@ -6,8 +6,7 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
     {
         public long ProductId { get; set; }
         public int Discount { get; set; }
-        public string Reason { get; set; }
         public string StartDateS { get; set; }
-        public string? EndDateS { get; set; }
+        public string EndDateS { get; set; }
     }
 }

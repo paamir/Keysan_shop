@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
@@ -28,14 +29,15 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
         {
             var Products = _shopContext.Products.Select(x => new {Id = x.Id, Name = x.Name});
 
-        var query = _context.CustomerDiscounts
+            var query = _context.CustomerDiscounts
                 .Select(x => new CustomerDiscountViewModel
                 {
+                    Id = x.Id,
                     Discount = x.Discount,
                     EndDate = x.EndDate,
                     StartDate = x.StartDate,
-                    StartDateS = x.StartDate.ToString(),
-                    EndDateS = x.StartDate.ToString(),
+                    StartDateS = x.StartDate.ToFarsi(),
+                    EndDateS = x.EndDate.ToFarsi(),
                     ProductId = x.ProductId,
                     Reason = x.Reason
                 });
@@ -47,20 +49,16 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
             {
                 query = query.Where(x => x.ProductId == command.ProductId);
             }
-            if (!string.IsNullOrWhiteSpace(command.Reason))
-            {
-                query = query.Where(x => x.Reason.Contains(command.Reason));
-            }
             if (!string.IsNullOrWhiteSpace(command.StartDateS))
             {
-                var startDate = DateTime.Now;
-                query = query.Where(x => x.StartDate < startDate);
+                var startDate = command.StartDateS.ToGeorgianDateTime();
+                query = query.Where(x => x.StartDate >= startDate);
             }
             if (!string.IsNullOrWhiteSpace(command.EndDateS))
             {
-                var endDate = DateTime.Now;
+                var endDate = command.EndDateS.ToGeorgianDateTime();
 
-                query = query.Where(x => x.EndDate > endDate);
+                query = query.Where(x => x.EndDate <= endDate);
             }
 
  
@@ -77,11 +75,11 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
            return _context.CustomerDiscounts.Select(x => new CustomerDiscountEditModel
            {
                Discount = x.Discount,
-               EndDate = x.EndDate,
+               EndDateS = x.EndDate.ToString(),
                Id = x.Id,
                ProductId = x.ProductId,
                Reason = x.Reason,
-               StartDate = x.StartDate
+               StartDateS = x.StartDate.ToString()
            }).FirstOrDefault(x => x.Id == id);
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using Domain.SlideAgg;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +25,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return _context.Slides.Select(x => new SlideViewModel()
             {
                 ButtonText = x.ButtonText,
-                CreationDate = x.CreationDate.ToString(),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Header = x.Header,
                 Id = x.Id,
                 IsDeleted = x.IsDeleted,

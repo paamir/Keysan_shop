@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DiscountManagement.Infrastructure.Configuration;
 using ShopManagement.Infrastructure.Configuration;
 
 namespace ServiceHost
@@ -26,7 +27,7 @@ namespace ServiceHost
         {
             var connectionString = Configuration.GetConnectionString("Keyson_Shop");
             ShopManagementBootstrapper.Configure(services, connectionString);
-
+            DiscountManagementBootstrapper.Configure(services, connectionString);
 
             services.AddRazorPages();
         }

@@ -10,9 +10,7 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ref\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\0_Framework.dll
-C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\Domain.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
-C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\Domain.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\0_Framework.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.csproj.CopyComplete
@@ -20,3 +18,5 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.genruntimeconfig.cache
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keyson_Shop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.pdb

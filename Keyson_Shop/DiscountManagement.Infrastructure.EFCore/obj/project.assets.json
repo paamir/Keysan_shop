@@ -1537,7 +1537,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_Framework": "1.0.0"
+          "0_Framework": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
@@ -1560,20 +1561,6 @@
           "bin/placeholder/DiscountManagement.Domain.dll": {}
         }
       },
-      "Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "0_Framework": "1.0.0",
-          "ShopManagement.Application.Contracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Domain.dll": {}
-        }
-      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1587,13 +1574,27 @@
           "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
         }
       },
+      "ShopManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
+      },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "ShopManagement.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ShopManagement.Infrastructure.EFCore.dll": {}
@@ -5885,15 +5886,15 @@
       "path": "../DescountManagement.Domain/DiscountManagement.Domain.csproj",
       "msbuildProject": "../DescountManagement.Domain/DiscountManagement.Domain.csproj"
     },
-    "Domain/1.0.0": {
-      "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
-    },
     "ShopManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../ProductCategory.Contract/ShopManagement.Application.Contracts.csproj",
       "msbuildProject": "../ProductCategory.Contract/ShopManagement.Application.Contracts.csproj"
+    },
+    "ShopManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/ShopManagement.Domain.csproj",
+      "msbuildProject": "../Domain/ShopManagement.Domain.csproj"
     },
     "ShopManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",

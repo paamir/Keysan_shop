@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using Domain.ProductAgg;
 using Domain.ProductCategoryAgg;
@@ -52,7 +53,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CategoryId = x.CategoryId,
                     Code = x.Code,
                     Picture = x.Picture, UnitPrice = x.UnitPrice,
-                    CreationDate = x.CreationDate.ToString(),
+                    CreationDate = x.CreationDate.ToFarsi(),
                     Stock = x.IsInStock
                 });
 

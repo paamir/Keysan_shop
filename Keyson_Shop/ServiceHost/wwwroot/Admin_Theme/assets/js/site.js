@@ -12,11 +12,10 @@ SinglePage.LoadModal = function () {
             $("#ModalContent").html(htmlPage);
             //if this code not the vlidation dosn't work on client side work on server side 
             //این چند خط برای ولیدیشن هستند و اگر نباشیند ولی دیشن سمت کابر اجرا نخواهد شد
-            const container = document.getElementById("ModalContent");
-            const forms = container.getElementsByTagName("form");
-            const newForm = forms[forms.length - 1];
-            $.validator.unobtrusive.parse(newForm);
-            //
+           // const container = document.getElementById("ModalContent");
+           // const forms = container.getElementsByTagName("form");
+         //   const newForm = forms[forms.length - 1];
+           // $.validator.unobtrusive.parse(newForm);
             showModal();
         }).fail(function (error) {
             alert("خطایی رخ داده، لطفا با مدیر سیستم تماس بگیرید.");
@@ -38,7 +37,8 @@ $(document).ready(function () {
     $("#MainModal").on("shown.bs.modal",
         function () {
             window.location.hash = "##";
-            $('.persianDateInput').persianDatepicker({
+            $('.datetimePersian').persianDatepicker({
+                observer: true,
                 format: 'YYYY/MM/DD',
                 autoClose: true
             });
@@ -187,10 +187,12 @@ function handleAjaxCall(method, url, data) {
     }
 }
 
-jQuery.validator.addMethod("maxFileSize",
+
+jQuery.validator.AddMethod("maxFileSize",
     function (value, element, params) {
         var size = element.files[0].size;
         var maxSize = 3 * 1024 * 1024;
+        debugger;
         if (size > maxSize)
             return false;
         else {
@@ -198,16 +200,3 @@ jQuery.validator.addMethod("maxFileSize",
         }
     });
 jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
-
-//jQuery.validator.addMethod("maxFileSize",
-//    function (value, element, params) {
-//        var size = element.files[0].size;
-//        var maxSize = 3 * 1024 * 1024;
-//        debugger;
-//        if (size > maxSize)
-//            return false;
-//        else {
-//            return true;
-//        }
-//    });
-//jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");

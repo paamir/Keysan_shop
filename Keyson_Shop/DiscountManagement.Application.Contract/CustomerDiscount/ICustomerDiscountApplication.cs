@@ -6,7 +6,7 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
     public interface ICustomerDiscountApplication
     {
         public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel command);
-        public CustomerDiscountEditModel GetDetail(long id);
+        public CustomerDiscountEditModel GetDetailBy(long id);
         public OperationResult Edit(CustomerDiscountEditModel command);
         public OperationResult Create(CustomerDiscountCreateModel command);
 

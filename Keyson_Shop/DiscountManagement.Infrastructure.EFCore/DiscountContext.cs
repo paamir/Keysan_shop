@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DiscountManagement.Application.Contract.CustomerDiscount;
+using DiscountManagement.Domain.ColleagueDiscountAgg;
 using DiscountManagement.Domain.CustomerDiscountAgg;
 using DiscountManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace DiscountManagement.Infrastructure.EFCore
     public class DiscountContext : DbContext
     {
         public DbSet<CustomerDiscount> CustomerDiscounts { get; set; }
+        public DbSet<ColleagueDiscount> ColleagueDiscounts{ get; set; }
         public DiscountContext(DbContextOptions options) : base(options)
         {
         }

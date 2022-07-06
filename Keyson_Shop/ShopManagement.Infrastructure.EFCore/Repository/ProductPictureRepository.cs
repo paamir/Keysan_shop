@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using Domain.ProductPictureAgg;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +38,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 .Include(x => x.Product)
                 .Select(x => new ProductPictureViewModel
                 {
-                    CreationDate = x.CreationDate.ToString(),
+                    CreationDate = x.CreationDate.ToFarsi(),
                     Id = x.Id,
                     Picture = x.Picture,
                     IsDeleted = x.IsDeleted,

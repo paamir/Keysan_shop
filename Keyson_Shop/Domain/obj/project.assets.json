@@ -570,9 +570,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\Domain.csproj",
-      "projectName": "Domain",
-      "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\ShopManagement.Domain.csproj",
+      "projectName": "ShopManagement.Domain",
+      "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\ShopManagement.Domain.csproj",
       "packagesPath": "C:\\Users\\amirparsa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\obj\\",
       "projectStyle": "PackageReference",
