@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using _0_Framework.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace InventoryManagement.Application
 {
@@ -78,10 +79,30 @@ namespace InventoryManagement.Application
                 return operationResult.Failed("امکان ثبت سفارش بیشتر از تعداد موجود نیست");
             }
             const long operatorId = 1;
-            const long orderId = 1;
-            inventory.Reduction(command.Count, command.Description, operatorId,orderId);
+            inventory.Reduction(command.Count, command.Description, operatorId,0);
             _inventoryRepository.SaveChanges();
 
+            return operationResult.Succdded();
+        }
+        public OperationResult Reduction(List<InventoryReductionModel> command)
+        {
+            var operationResult = new OperationResult();
+            const long operatorId = 1;
+            foreach (var item in command)
+            {
+                var inventory = _inventoryRepository.GetByP(item.ProductId);
+                if (inventory == null)
+                    return operationResult.Failed(OperationMessages.RecordNotFound);
+                if (inventory.CurrentStockCount() - item.Count < 0)
+                {
+                    return operationResult.Failed(
+                        $"امکان ثبت سفارش از محصول {item.Product} بیشتر از تعداد موجود وجود ندارد");
+                }
+
+                inventory.Reduction(item.Count, item.Description, operatorId, 0);
+            }
+
+            _inventoryRepository.SaveChanges();
             return operationResult.Succdded();
         }
 

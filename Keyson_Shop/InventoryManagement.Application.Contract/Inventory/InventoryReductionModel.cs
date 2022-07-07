@@ -10,5 +10,6 @@ namespace InventoryManagement.Application.Contract.Inventory
         public long OperatorId { get; set; }
         public long OrderId { get; set; }
         public string Description { get; set; }
+        public string Product { get; set; }
     }
 }
