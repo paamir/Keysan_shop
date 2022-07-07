@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PuFI2DGe8w8WKRcUoW8Nx0uNYvGxkx+Gyn5BnNt1U/hbK4fJYl48GySniHgnEmNa15YHpFbXN1ZsZfNlIKSecQ==",
+  "dgSpecHash": "pgqzR5FWKN9+idE3ivxcHQXG5/MQo7BlMgxYHbG2UUohym3eWGY1FMf9LtDwfJkKHBzz6crB6fOwHTGA2JFV8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\Domain\\ShopManagement.Domain.csproj",
+  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\New folder\\Keysan_shop\\Keyson_Shop\\Domain\\ShopManagement.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+kAeJeuy+YA+Ns8Obe7IHC9RT3gUFpG4qlnzwfwYBcILzYSxe9iPJh+ca/pajwUkLDGcAeAAAwjTUDxwRLlZVw==",
+  "dgSpecHash": "H2i083a7yGYQ8Xl7GO6qK8PuZYYtSBtmOt/H5LcR0UG9UKZEyUKmYHrGbneBFBlNBiE3OwfMuFXlf6SSxMQtvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\ServiceHost\\ServiceHost.csproj",
+  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\New folder\\Keysan_shop\\Keyson_Shop\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amirparsa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WslLefwXnUiQ6wwFgP6GGl5A+BVHz/ln1QicKdoEOxqXze0B2g5K1MFe7Fxu7MBl6oSKe8pEitbmB3eEGkIifA==",
+  "dgSpecHash": "U6DHclVmBvS47+DA0pVPX2nXm5usPVrbUz/vuKRRMs54hUfO84bnWfI4YLuADO/LVGlRy+WCPU5ubmE6iWbD5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\New folder\\Keysan_shop\\Keyson_Shop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amirparsa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

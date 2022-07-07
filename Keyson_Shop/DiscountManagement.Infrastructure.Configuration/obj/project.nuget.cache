@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2DK84HC9llNlSt87Kd7VgyJG9sp7SS/DPVTdNzP7Aj7Smg+DM/yGEWaFkqapMTl7BhSqToDJ2PcUI0g+rYT8Ow==",
+  "dgSpecHash": "tysQZjTuW5lgfqFNKBGLzvuBBZ4SCGDNP4VStKsSi12oxTHdFGurnyMWuzW4FQNcs9vwMhWk84hd7z877CmQNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keyson_Shop\\DiscountManagement.Infrastructure.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\New folder\\Keysan_shop\\Keyson_Shop\\DiscountManagement.Infrastructure.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
