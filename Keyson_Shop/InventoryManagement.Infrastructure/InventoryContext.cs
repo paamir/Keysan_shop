@@ -5,10 +5,10 @@ using ShopManagement.Infrastructure.EFCore;
 
 namespace InventoryManagement.Infrastructure.EFCore
 {
-    public class InventoryContext : ShopContext
+    public class InventoryContext : DbContext
     {
         public DbSet<Inventory> Inventories { get; set; }
-        public InventoryContext(DbContextOptions<ShopContext> options) : base(options)
+        public InventoryContext(DbContextOptions<InventoryContext> options) : base(options)
         {
         }
 

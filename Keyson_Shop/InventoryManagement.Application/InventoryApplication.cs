@@ -71,7 +71,7 @@ namespace InventoryManagement.Application
         public OperationResult Reduction(InventoryReductionModel command)
         {
             var operationResult = new OperationResult();
-            var inventory = _inventoryRepository.GetBy(command.ProductId);
+            var inventory = _inventoryRepository.GetBy(command.InventoryId);
             if (inventory == null)
                 return operationResult.Failed(OperationMessages.RecordNotFound);
             if (inventory.CurrentStockCount() - command.Count < 0)
@@ -111,9 +111,14 @@ namespace InventoryManagement.Application
             return _inventoryRepository.Search(command);
         }
 
-        public InventoryEditModel GetDetail(long id)
+        public InventoryEditModel GetDetailBy(long id)
         {
             return _inventoryRepository.GetDetail(id);
+        }
+
+        public List<InventoryOperationViewModel> GetInventoryOperationLog(long id)
+        {
+            return _inventoryRepository.GetLogOperations(id);
         }
     }
 }

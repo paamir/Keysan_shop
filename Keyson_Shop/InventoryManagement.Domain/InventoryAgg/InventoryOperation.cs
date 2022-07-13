@@ -24,6 +24,7 @@ namespace InventoryManagement.Domain.InventoryAgg
             OrderId = orderId;
             OperatorId = operatorId;
             Operation = operation;
+            OperationDate = DateTime.Now;
         }
     }
 }

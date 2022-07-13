@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ShopManagement.Application.Contracts.Product;
 
 namespace InventoryManagement.Application.Contract.Inventory
 {
@@ -9,5 +10,6 @@ namespace InventoryManagement.Application.Contract.Inventory
     {
         public long ProductId { get; set; }
         public double UnitPrice { get; set; }
+        public List<ProductViewModel> Products { get; set; }
     }
 }

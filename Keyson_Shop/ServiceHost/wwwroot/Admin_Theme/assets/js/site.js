@@ -27,6 +27,7 @@ function showModal() {
 }
 
 function hideModal() {
+    $(".modal-dialog").css('width', '30%');
     $("#MainModal").modal("hide");
 }
 
@@ -188,7 +189,7 @@ function handleAjaxCall(method, url, data) {
 }
 
 
-jQuery.validator.AddMethod("maxFileSize",
+jQuery.validator.addMethod("maxFileSize",
     function (value, element, params) {
         var size = element.files[0].size;
         var maxSize = 3 * 1024 * 1024;

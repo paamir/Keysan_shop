@@ -8,6 +8,7 @@ using Domain.ProductCategoryAgg;
 using Domain.ProductPictureAgg;
 using Domain.SlideAgg;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Infrastructure.EFCore.Mapping;
 
 namespace ShopManagement.Infrastructure.EFCore

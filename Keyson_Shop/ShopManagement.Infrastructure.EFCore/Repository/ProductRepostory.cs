@@ -10,6 +10,7 @@ using Domain.ProductCategoryAgg;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Domain.ProductAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -30,7 +31,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Name = x.Name,
                 Code = x.Code,
                 Slug = x.Slug,
-                UnitPrice = x.UnitPrice,
                 CategoryId = x.CategoryId,
                 Description = x.Description,
                 Keywords = x.Keywords,
@@ -52,9 +52,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CategoryS = x.Category.Name,
                     CategoryId = x.CategoryId,
                     Code = x.Code,
-                    Picture = x.Picture, UnitPrice = x.UnitPrice,
                     CreationDate = x.CreationDate.ToFarsi(),
-                    Stock = x.IsInStock
                 });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))

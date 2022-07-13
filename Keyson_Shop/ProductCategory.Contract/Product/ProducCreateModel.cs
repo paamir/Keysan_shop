@@ -20,8 +20,6 @@ namespace ShopManagement.Application.Contracts.Product
         public string Slug { get; set; }
 
         [Range(1,double.MaxValue)]
-        public double UnitPrice { get; set; }
-        public bool IsInStock { get; set; }
         public string Picture { get; set; }
         public string PictureAlt { get; set; }
         public string PictureTitle { get; set; }

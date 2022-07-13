@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
@@ -23,6 +24,23 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
             return _context.Inventories.FirstOrDefault(x => x.ProductId == productId);
         }
 
+        public List<InventoryOperationViewModel> GetLogOperations(long inventoryId)
+        {
+            var Inventory = _context.Inventories.FirstOrDefault(x => x.Id == inventoryId);
+            return Inventory.Operations.Select(x => new InventoryOperationViewModel
+            {
+                Count = x.Count,
+                Description = x.Description,
+                CurrentCount = x.CurrentCount,
+                Id = x.Id,
+                Operation = x.Operation,
+                OperationDate = x.OperationDate.ToFarsi(),
+                Operator = "مدیرسیستم",
+                OrderId = x.OrderId,
+                OperatorId = x.OperatorId
+            }).ToList();
+        }
+
         public List<InventoryViewModel> Search(InventorySearchModel command)
         {
             var Products = _shopContext.Products.Select(x => new {Id = x.Id, Name = x.Name}).ToList();
@@ -36,7 +54,7 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
                 CurrentCount = x.CurrentStockCount()
             });
 
-            if (!command.IsInStock)
+            if (command.IsInStock)
             {
                 query = query.Where(x => !x.IsInStock);
             }

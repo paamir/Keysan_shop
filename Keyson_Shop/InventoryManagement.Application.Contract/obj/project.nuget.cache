@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TUHGE2fSPWLzQxWNPkSl54ellBVVzbihN9bb8i6V4wmy9IJwoWAkwWGEjD4Vdn7zw+nhGrR2Qs/5Gg2afFZctg==",
+  "dgSpecHash": "QdNgDRNezvH6ppFZhdnLFkWZQr2Mh6QvMfT/PYxiiF8UagX7BVn8KBTyqycpkNIUR6g0eVJ3UlPqOPzsc0lB2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\New folder\\Keysan_shop\\Keyson_Shop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+  "projectFilePath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
     "C:\\Users\\amirparsa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",

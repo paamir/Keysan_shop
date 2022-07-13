@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using _0_Framework;
 using _0_Framework.Domain;
 using Domain.ProductAgg;
+using ShopManagement.Domain.ProductAgg;
 
 namespace Domain.ProductCategoryAgg
 {

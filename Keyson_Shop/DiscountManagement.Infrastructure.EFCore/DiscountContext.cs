@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace DiscountManagement.Infrastructure.EFCore
     {
         public DbSet<CustomerDiscount> CustomerDiscounts { get; set; }
         public DbSet<ColleagueDiscount> ColleagueDiscounts{ get; set; }
-        public DiscountContext(DbContextOptions options) : base(options)
+        public DiscountContext(DbContextOptions<DiscountContext> options) : base(options)
         {
         }
 

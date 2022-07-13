@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using _0_Framework.Domain;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Domain.ProductAgg;
 
 namespace Domain.ProductAgg
 {
