@@ -40,7 +40,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                     EndDateS = x.EndDate.ToFarsi(),
                     ProductId = x.ProductId,
                     Reason = x.Reason
-                });
+                }).AsNoTracking();
             if (command.Discount != 0)
             {
                 query = query.Where(x => x.Discount == command.Discount);

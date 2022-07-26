@@ -32,6 +32,12 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "C:\\Users\\amirparsa\\Desktop\\Enable Project\\Keyson_project\\Keyson_shop\\Keysan_shop\\Keyson_Shop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }

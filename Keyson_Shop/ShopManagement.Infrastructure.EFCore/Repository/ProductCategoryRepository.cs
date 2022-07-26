@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
-using Domain.ProductCategoryAgg;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -33,8 +34,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             PictureTitle = x.PictureTitle,
             Slug = x.Slug,
             PictureAlt = x.PictureAlt
-        }).FirstOrDefault();
+        }).AsNoTracking().FirstOrDefault();
     }
+
     public List<ProductCategoryViewModel> Search(ProductCategorySearchModel productCategorySearch)
     {
         var Products = _context.ProductCategories.Select(x => new ProductCategoryViewModel()
@@ -43,8 +45,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             Description = x.Description,
             Name = x.Name,
             Picture = x.Picture,
-            CreationDate = x.CreationDate.ToFarsi()
-        });
+            CreationDate = x.CreationDate.ToFarsi(),
+            IsVisible = x.IsVisible
+        }).AsNoTracking();
 
         if (!string.IsNullOrWhiteSpace(productCategorySearch.Name))
         {
@@ -60,7 +63,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         {
             Id = x.Id,
             Name = x.Name
-        }).ToList();
+        }).AsNoTracking().ToList();
     }
     }
 }

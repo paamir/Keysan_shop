@@ -73,3 +73,15 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\obj\Debug\net5.0\ShopManagement.Infrastructure.Configuration.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.Configuration.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\obj\Debug\net5.0\ShopManagement.Infrastructure.Configuration.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ShopManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb

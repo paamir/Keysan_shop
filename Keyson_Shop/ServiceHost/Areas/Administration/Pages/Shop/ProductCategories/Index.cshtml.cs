@@ -11,7 +11,10 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
     public class IndexModel : PageModel
     {
         public ProductCategorySearchModel SearchModel;
-
+        [TempData]
+        public string MessageFail { get; set; }
+        [TempData]
+        public string MessageSuccess { get; set; }
         public List<ProductCategoryViewModel> ProductCategories;
         private readonly IProductCategoryApplication _productCategoryApplication;
 
@@ -22,7 +25,6 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
 
         public void OnGet(ProductCategorySearchModel searchModel)
         {
-
             ProductCategories = _productCategoryApplication.Search(searchModel);
         }
 
@@ -33,7 +35,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
 
         public JsonResult OnPostCreate(CreateProductCategoryModel productCategory)
         {
-            var result  = _productCategoryApplication.Create(productCategory);
+            var result = _productCategoryApplication.Create(productCategory);
             return new JsonResult(result);
         }
 
@@ -48,5 +50,35 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
             var result = _productCategoryApplication.Edit(command);
             return new JsonResult(result);
         }
+
+        public IActionResult OnGetDelete(long id)
+        {
+            var result = _productCategoryApplication.unVisible(id);
+            if (result.IsSuccedded)
+            {
+                MessageSuccess = result.Message;
+            }
+            else
+            {
+                MessageFail = result.Message;
+            }
+
+            return RedirectToPage("./Index");
+        }
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = _productCategoryApplication.Visible(id);
+            if (result.IsSuccedded)
+            {
+                MessageSuccess = result.Message;
+            }
+            else
+            {
+                MessageFail = result.Message;
+            }
+
+            return RedirectToPage("./Index");
+        }
+
     }
 }

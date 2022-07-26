@@ -61,3 +61,15 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\obj\Debug\net5.0\01_Keyson_Shop_Query.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\obj\Debug\net5.0\ref\01_Keyson_Shop_Query.dll
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\obj\Debug\net5.0\01_Keyson_Shop_Query.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\01_Keyson_Shop_Query\bin\Debug\net5.0\InventoryManagement.Domain.pdb

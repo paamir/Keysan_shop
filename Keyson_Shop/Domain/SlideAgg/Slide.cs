@@ -1,7 +1,6 @@
-﻿using _0_Framework;
-using _0_Framework.Domain;
+﻿using _0_Framework.Domain;
 
-namespace Domain.SlideAgg
+namespace ShopManagement.Domain.SlideAgg
 {
     public class Slide : EntityBase
     {

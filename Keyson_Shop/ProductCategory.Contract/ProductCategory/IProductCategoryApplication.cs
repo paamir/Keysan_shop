@@ -9,6 +9,9 @@ namespace ShopManagement.Application.Contracts.ProductCategory
     {
         OperationResult Create(CreateProductCategoryModel command);
         OperationResult Edit(EditProductCategoryModel command);
+        OperationResult unVisible(long id);
+        OperationResult Visible(long id);
+
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel);
         EditProductCategoryModel GetDetail(long id);
         List<ProductCategoryViewModel> GetProductCategories();

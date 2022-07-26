@@ -30,7 +30,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 Discount = x.Discount,
                 Id = x.Id,
                 ProductId = x.ProductId
-            }).FirstOrDefault(x => x.Id == id);
+            }).AsNoTracking().FirstOrDefault(x => x.Id == id);
         }
 
         public List<ColleagueDiscountViewModel> Search(ColleagueDiscountSearchModel command)
@@ -43,10 +43,10 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 IsDeleted = x.IsDeleted,
                 ProductId = x.ProductId,
                 CreationDate = x.CreationDate
-            });
+            }).AsNoTracking();
             if (command.ProductId != 0)
             {
-                query = query.Where(x => x.ProductId == command.ProductId);
+                query = query.Where(x => x.ProductId == command.ProductId).AsNoTracking();
             }
 
             var discounts = query.OrderByDescending(x => x.Id).ToList();

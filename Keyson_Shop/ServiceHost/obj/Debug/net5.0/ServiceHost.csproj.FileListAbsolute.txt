@@ -597,3 +597,10 @@ C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduction.cshtml.g.cs
 C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\InventoryOperationLogs.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoryWithProducts\Default.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArrivals\Default.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Search.cshtml.g.cs
+C:\Users\amirparsa\Desktop\Enable Project\Keyson_project\Keyson_shop\Keysan_shop\Keyson_Shop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Product.cshtml.g.cs

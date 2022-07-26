@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using _01_Keyson_Shop_Query.Contract.Slide;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace _01_Keyson_Shop_Query.Implementation
@@ -28,7 +29,7 @@ namespace _01_Keyson_Shop_Query.Implementation
                     Text = x.Text,
                     PictureAlt = x.PictureAlt,
                     PictureTitle = x.PictureTitle
-                }).ToList();
+                }).AsNoTracking().ToList();
         }
     }
 }

@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework;
 using _0_Framework.Application;
-using Domain.ProductPictureAgg;
 using ShopManagement.Application.Contracts.ProductPicture;
+using ShopManagement.Domain.ProductPictureAgg;
 
 namespace ShopManagement.Application
 {

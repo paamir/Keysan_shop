@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Application;
-using Domain.ProductAgg;
 using ShopManagement.Application.Contracts.Product;
 
 namespace DiscountManagement.Application.Contract.CustomerDiscount

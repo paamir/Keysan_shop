@@ -13,7 +13,6 @@ namespace ShopManagement.Application.Contracts.Product
     {
         OperationResult Create(ProductCreateModel command);
         OperationResult Edit(ProductEditModel command);
-        List<ProductViewModel> GetAll();
         ProductEditModel GetDetailBy(long id);
         List<ProductViewModel> Search(ProductSearchModel searchModel);
         List<ProductViewModel> GetProducts();

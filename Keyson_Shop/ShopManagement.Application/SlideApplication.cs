@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework;
 using _0_Framework.Application;
-using Domain.SlideAgg;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.SlideAgg;
 
 namespace ShopManagement.Application
 {

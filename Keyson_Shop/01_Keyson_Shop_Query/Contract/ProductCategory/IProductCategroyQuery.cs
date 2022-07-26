@@ -9,5 +9,7 @@ namespace _01_Keyson_Shop_Query.Contract.ProductCategory
     public interface IProductCategoryQuery
     {
         List<ProductCategoryQueryModel> GetProductCategories();
+        List<ProductCategoryQueryModel> GetProductCategoriesWithProducts();
+        ProductCategoryQueryModel GetProductCategoriesWithProducts(string slug);
     }
 }

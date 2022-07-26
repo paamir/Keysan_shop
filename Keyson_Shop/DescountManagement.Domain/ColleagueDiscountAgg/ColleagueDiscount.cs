@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Domain;
-using Domain.ProductAgg;
 
 namespace DiscountManagement.Domain.ColleagueDiscountAgg
 {

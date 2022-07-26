@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using _0_Framework.Domain;
-using Domain.ProductAgg;
-using Domain.ProductCategoryAgg;
-using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductPicture;
 
-namespace Domain.ProductPictureAgg
+namespace ShopManagement.Domain.ProductPictureAgg
 {
     public interface IProductPictureRepository : IRepository<long, ProductPicture>
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.ProductCategoryAgg;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Mapping
 {

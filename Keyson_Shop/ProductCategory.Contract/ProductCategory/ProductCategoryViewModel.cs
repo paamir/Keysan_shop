@@ -8,5 +8,6 @@
         public int ProductCount { get; set; }
         public string Picture { get; set; }
         public string CreationDate { get; set; }
+        public bool IsVisible { get; set; }
     }
 }

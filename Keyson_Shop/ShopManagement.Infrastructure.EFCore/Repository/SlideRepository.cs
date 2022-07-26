@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
-using Domain.SlideAgg;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.SlideAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -33,7 +33,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Text = x.Text,
                 Title = x.Title,
                 Link = x.Link
-            }).ToList();
+            }).AsNoTracking().ToList();
         }
 
         public SlideEditModel GetDetail(long id)
@@ -50,7 +50,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                PictureAlt = x.PictureAlt,
                PictureTitle = x.PictureTitle,
                Link = x.Link
-           }).FirstOrDefault(x => x.Id == id);
+           }).AsNoTracking().FirstOrDefault(x => x.Id == id);
         }
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.SlideAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using ShopManagement.Domain.SlideAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Mapping
 {

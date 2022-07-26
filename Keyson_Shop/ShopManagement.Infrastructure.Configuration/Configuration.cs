@@ -5,13 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using _01_Keyson_Shop_Query;
 using _01_Keyson_Shop_Query.Contract;
+using _01_Keyson_Shop_Query.Contract.Product;
 using _01_Keyson_Shop_Query.Contract.ProductCategory;
 using _01_Keyson_Shop_Query.Contract.Slide;
 using _01_Keyson_Shop_Query.Implementation;
-using Domain.ProductAgg;
-using Domain.ProductCategoryAgg;
-using Domain.ProductPictureAgg;
-using Domain.SlideAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
@@ -19,6 +16,10 @@ using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.ProductAgg;
+using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 
@@ -43,6 +44,7 @@ namespace ShopManagement.Infrastructure.Configuration
 
             service.AddTransient<ISlideQuery, SlideQuery>();
             service.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
+            service.AddTransient<IProductQuery, ProductQuery>();
             service.AddDbContext<ShopContext>(x => x.UseSqlServer(constr));
 
         }

@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace InventoryManagement.Infrastructure.EFCore.Repository
@@ -21,12 +24,12 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
 
         public Inventory GetByP(long productId)
         {
-            return _context.Inventories.FirstOrDefault(x => x.ProductId == productId);
+            return _context.Inventories.AsNoTracking().FirstOrDefault(x => x.ProductId == productId);
         }
 
         public List<InventoryOperationViewModel> GetLogOperations(long inventoryId)
         {
-            var Inventory = _context.Inventories.FirstOrDefault(x => x.Id == inventoryId);
+            var Inventory = _context.Inventories.AsNoTracking().FirstOrDefault(x => x.Id == inventoryId);
             return Inventory.Operations.Select(x => new InventoryOperationViewModel
             {
                 Count = x.Count,
@@ -43,16 +46,16 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
 
         public List<InventoryViewModel> Search(InventorySearchModel command)
         {
-            var Products = _shopContext.Products.Select(x => new {Id = x.Id, Name = x.Name}).ToList();
+            var Products = _shopContext.Products.Select(x => new {Id = x.Id, Name = x.Name}).AsNoTracking().ToList();
             var query = _context.Inventories.Select(x => new InventoryViewModel
             {
-                CreationDate = x.CreationDate,
+                CreationDate = x.CreationDate.ToFarsi(),
                 ProductId = x.ProductId,
                 Id = x.Id,
                 IsInStock = x.IsInStock,
                 UnitPrice = x.UnitPrice,
                 CurrentCount = x.CurrentStockCount()
-            });
+            }).AsNoTracking();
 
             if (command.IsInStock)
             {
@@ -64,10 +67,9 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
                 query = query.Where(x => x.ProductId == command.ProductId);
             }
 
-            var Inventories = query.OrderByDescending(x => x.Id).ToList();
+            var Inventories = query.OrderByDescending(x => x.Id).AsNoTracking().ToList();
             Inventories.ForEach(Inventory =>
                 Inventory.Product = Products.FirstOrDefault(x => x.Id == Inventory.ProductId)?.Name);
-
             return Inventories;
         }
 
@@ -78,7 +80,7 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
                 ProductId = x.ProductId,
                 Id = x.Id,
                 UnitPrice = x.UnitPrice
-            }).FirstOrDefault(x => x.Id == id);
+            }).AsNoTracking().FirstOrDefault(x => x.Id == id);
         }
     }
 }

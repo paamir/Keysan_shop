@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
-using Domain.ProductPictureAgg;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductPicture;
+using ShopManagement.Domain.ProductPictureAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -29,7 +29,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 ProductId = x.ProductId
-            }).FirstOrDefault(x => x.Id == id);
+            }).AsNoTracking().FirstOrDefault(x => x.Id == id);
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel command)
@@ -43,7 +43,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Picture = x.Picture,
                     IsDeleted = x.IsDeleted,
                     Product = x.Product.Name,
-                });
+                }).AsNoTracking();
 
 
             if (command.ProductId != 0)
@@ -52,7 +52,8 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }
 
 
-            return products.OrderByDescending(x => x.Id).ToList();
+
+            return products.AsNoTracking().OrderByDescending(x => x.Id).ToList();
         }
     }
 }

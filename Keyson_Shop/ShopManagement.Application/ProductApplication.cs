@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework;
 using _0_Framework.Application;
-using Domain.ProductAgg;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductAgg;
@@ -66,12 +65,6 @@ namespace ShopManagement.Application
 
             return operationResult.Succdded();
         }
-
-        public List<ProductViewModel> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
 
         public ProductEditModel GetDetailBy(long id)
         {

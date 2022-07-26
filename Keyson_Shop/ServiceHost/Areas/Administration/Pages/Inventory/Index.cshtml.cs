@@ -98,7 +98,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             return new JsonResult(result);
 
         }
-        public IActionResult OnGetEdit(int id)
+        public IActionResult OnGetEdit(long id)
         {
             var Inventory = _inventoryApplication.GetDetailBy(id);
             Inventory.Products = _productApplication.GetProducts();

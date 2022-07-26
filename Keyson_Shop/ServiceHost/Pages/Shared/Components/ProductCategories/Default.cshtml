@@ -6,8 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <!--=======  category wrapper  =======-->
-
-                    <div class="category-wrapper">
+                <div class="category-wrapper">
                         <div class="row row-10 masonry-category-layout">
                             @foreach (var item in Model)
                             {
@@ -15,7 +14,7 @@
                                     <!--=======  single category item  =======-->
                                     <div class="single-category-item">
                                         <div class="single-category-item__image">
-                                            <a asp-page="/ProductCategory" asp-route-id=@item.Slug>
+                                            <a asp-page="ProductCategory" asp-route-id="@item.Slug">
                                                 <img src=@item.Picture class="img-fluid" alt=@item.PictureAlt title="@item.PictureTitle">
                                             </a>
                                         </div>

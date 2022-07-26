@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using _0_Framework;
-using _0_Framework.Domain;
-using Domain.ProductAgg;
+﻿using _0_Framework.Domain;
 using ShopManagement.Domain.ProductAgg;
 
-namespace Domain.ProductPictureAgg
+namespace ShopManagement.Domain.ProductPictureAgg
 {
     public class ProductPicture : EntityBase
     {
@@ -19,7 +12,7 @@ namespace Domain.ProductPictureAgg
         public bool IsDeleted { get;private set; }
         public Product Product { get;private set; }
 
-        public ProductPicture()
+        protected ProductPicture()
         {
             Product = new Product();
         }

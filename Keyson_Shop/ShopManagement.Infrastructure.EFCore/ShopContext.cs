@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.ProductAgg;
-using Domain.ProductCategoryAgg;
-using Domain.ProductPictureAgg;
-using Domain.SlideAgg;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Domain.ProductAgg;
+using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.EFCore.Mapping;
 
 namespace ShopManagement.Infrastructure.EFCore

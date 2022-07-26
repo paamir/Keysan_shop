@@ -1,6 +1,5 @@
 ﻿using System;
 using _0_Framework.Domain;
-using Domain.ProductAgg;
 
 namespace DiscountManagement.Domain.CustomerDiscountAgg
 {
